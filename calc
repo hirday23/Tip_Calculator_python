@@ -1,0 +1,10 @@
+bill = float(input("Tell your total bill :"))
+tip = int(input("How much you want to tip :"))
+people = int(input("Total number of people :"))
+new_bill1 = int((tip / 100) * bill)
+new_bill = bill + new_bill1
+new_tip = new_bill / bill
+payment = float((bill / people) * new_tip)
+# "{:.2f}" is used to put 2 decimal after number using format()
+pay = "{:.2f}".format(payment)
+print(f"Each person has to pay ${pay}")
